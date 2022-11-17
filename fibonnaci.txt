@@ -14,7 +14,7 @@ def rfibonacci(n):
     if(n <= 1):
         return n
     else:
-        return(fibonacci(n-1) + fibonacci(n-2))
+        return(rfibonacci(n-1) + rfibonacci(n-2))
 n = int(input("Enter number of terms:"))
 print("Fibonacci sequence:")
 for i in range(n):
